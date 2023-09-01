@@ -1,5 +1,5 @@
 <script setup>
-import axios from 'axios'
+  import axios from 'axios'
   import { ref, onMounted} from 'vue';
   import { useRoute } from 'vue-router'
   const route = useRoute()
@@ -38,6 +38,7 @@ import axios from 'axios'
 
             নীড় পাতা
           </router-link>
+          
           <router-link :to="`/post/${menu.name}/${menu.id}`" class="px-2 py-1 rounded hover:bg-gray-300" :class="route.params.category==menu.name?'bg-blue-200':'bg-gray-200'" v-for="(menu, index) in menuItems" :key="index">{{ menu.name }}</router-link>
           
         </div>

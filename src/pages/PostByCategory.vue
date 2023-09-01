@@ -24,9 +24,9 @@
 
 <template>
   <div class="text-center"  v-if="isNull">
-          <div @click="isNull = false" class="inline-flex items-center justify-between gap-2 px-10 py-3 mt-10 bg-green-300 cursor-pointer select-none rounded-xl hover:bg-gray-300">
-            তথ্য পেতে এখানে একটি খোঁচা দিন
-          </div>
+    <div @click="isNull = false" class="inline-flex items-center justify-between gap-2 px-10 py-3 mt-10 bg-green-300 cursor-pointer select-none rounded-xl hover:bg-gray-300">
+      তথ্য পেতে এখানে একটি খোঁচা দিন
+    </div>
   </div>
   <PostList v-else :posts="posts"/>
 </template>
